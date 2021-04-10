@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(/images/bg-intro-desktop.png);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  height: 97vh;
+  color: whitesmoke;
+}
+
+.intro-container,
+.form-container {
+  position: relative;
+  display: flex;
+}
+.intro-div {
+  width: 65%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+p {
+  text-align: left;
+}
+h2 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+  margin: auto;
+  background: #6055a5;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.form-div {display: block;
+width: 70%;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+  font-display: fallback;
+}
+form {
+  background: white;
+  margin-top: 15px;
+  border-radius: 6px;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+input:focus {
+  border: 1px solid #6055a5;
+}
+input {
+  width: 80%;
+  display: inline-block;
+  border: 0.5px solid #6055a5;
+  margin: 1rem;
+  border-radius: 3px;
+  padding: 0.8rem;
+  text-transform:uppercase;
+}
+.submit {
+  background: hsl(154, 59%, 51%);
+  border: none;
+  border-radius: 6px;
+  color: white
+}
+span{
+  display: block;
+  font-size:10px;
+  color: hsl(246, 25%, 77%);
+
+}
+span > b{
+  color: hsl(0, 100%, 74%);
+}
+
+.attribution {
+  display: block;
+  background: hsl(0, 100%, 74%);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px){
+  body{
+    background-position: center;
+  }
+  main{
+  display: block;
+  height: fit-content;
+  background-position: center;
+  }
+  .intro-div .form-div{
+    width: 100%;
+  }
+  .form-container .intro-container{
+    height: 80vh;
+  }
+.intro-div {
+    text-align: center;
+      padding: 3rem 0px 2rem 0px;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  footer{
+ margin-top:2vh ;
+}
+}
